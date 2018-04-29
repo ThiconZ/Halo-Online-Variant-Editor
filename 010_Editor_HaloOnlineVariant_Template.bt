@@ -1,0 +1,734 @@
+//------------------------------------------------
+//--- 010 Editor v8.0 Binary Template
+//
+//      File: 
+//   Authors: Xennma
+//   Version: 1.0
+//   Purpose: Mapping of Game Mode variant files for Halo Online ms23/0.6
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+
+enum <int> GameType
+{
+    gt_UNK = 0,
+    gt_CTF = 1,
+    gt_Slayer = 2,
+    gt_Oddball = 3,
+    gt_KOTH = 4,
+    gt_Forge = 5,
+    gt_VIP = 6,
+    gt_Juggernaut = 7,
+    gt_Territories = 8,
+    gt_Assault = 9,
+    gt_Infection = 10
+};
+
+enum <int> GameTypeOrderType
+{
+    gto_UNK = 0,
+    gto_CTF = 1,
+    gto_Slayer = 2,
+    gto_Oddball = 3,
+    gto_KOTH = 4,
+    gto_Forge = 10,
+    gto_VIP = 9,
+    gto_Juggernaut = 5,
+    gto_Territories = 6,
+    gto_Assault = 7,
+    gto_Infection = 8
+};
+
+
+enum <int> GameCodeType
+{
+    gc_CTF = 23437400,
+    gc_Slayer = 23437160,
+    gc_Oddball = 23437208,
+    gc_KOTH = 23437256,
+    gc_Forge = -1,
+    gc_VIP = 23437496,
+    gc_Juggernaut = 23437544,
+    gc_Territories = 23437352,
+    gc_Assault = 23437448,
+    gc_Infection = 23437304
+};
+
+enum <byte> DamageResistanceType
+{
+    dr_Unchanged = 0,
+    dr_10_perc,
+    dr_50_perc,
+    dr_90_perc,
+    dr_100_perc,
+    dr_110_perc,
+    dr_150_perc,
+    dr_200_perc,
+    dr_300_perc,
+    dr_500_perc,
+    dr_1000_perc,
+    dr_2000_perc,
+    dr_Invulnerable,
+    dr_Invincible
+};
+
+enum <byte> ShieldMultiplierType
+{
+    sm_Unchanged = 0,
+    sm_None,
+    sm_Normal,
+    sm_Over2x,
+    sm_Over3x,
+    sm_Over4x
+};
+
+enum <byte> ShieldRechargeRateType
+{
+    srr_Unchanged = 0,
+    srr_N25_perc,
+    srr_N10_perc,
+    srr_N5_perc,
+    srr_0_perc,
+    srr_50_perc,
+    srr_90_perc,
+    srr_100_perc,
+    srr_110_perc,
+    srr_200_perc
+};
+
+enum <byte> ShieldVampirismType
+{
+    sv_Unchanged = 0,
+    sv_Disabled,
+    sv_10_perc,
+    sv_25_perc,
+    sv_50_perc,
+    sv_100_perc
+};
+
+enum <byte> ToggleBooleanType
+{
+    tb_Unchanged = 0,
+    tb_Enabled,
+    tb_Disabled
+};
+
+enum <byte> InfiniteAmmoType
+{
+    ia_Unchanged = 0,
+    ia_Disabled,
+    ia_Enabled,
+    ia_Bottomless
+};
+
+enum <byte> GrenadeCountType
+{
+    grenade_Unchanged = 0,
+    grenade_MapDefault,
+    grenade_None
+};
+
+enum <byte> WeaponType
+{
+    w_AssaultRifle = 1,
+    w_BattleRifle = 0,
+    w_BruteShot = 13,
+    w_GravityHammer = 18,
+    w_Magnum = 7,
+    w_Needler = 8,
+    w_PlasmaPistol = 2,
+    w_PlasmaRifle = 9,
+    w_RocketLauncher = 10,
+    w_Shotgun = 11,
+    w_SMG = 4,
+    w_SniperRifle = 12,
+    w_SpartanLaser = 16,
+    w_EnergySword = 6,
+    w_Spiker = 3,
+    w_Carbine = 5,
+    w_BeamRifle = 15,
+    w_Mauler = 19,
+    w_FuelRodGun = 23,
+    w_Flamethrower = 20,
+    w_MissilePod = 21,
+    w_SentinelBeam = 22,
+    w_DMR = 24,
+    w_Unarmed = 14,
+    w_None = 17,
+    w_AssaultRifle_ACC = 29,
+    w_AssaultRifle_DMG = 26,
+    w_AssaultRifle_ROF = 27,
+    w_AssaultRifle_PWR = 30,
+    w_BattleRifle_ACC = 32,
+    w_BattleRifle_DMG = 34,
+    w_BattleRifle_MAG = 33,
+    w_BattleRifle_RNG = 35,
+    w_BattleRifle_ROF = 31,
+    w_BattleRifle_PWR = 36,
+    w_DMR_ACC = 38,
+    w_DMR_DMG = 40,
+    w_DMR_MAG = 41,
+    w_DMR_RNG = 37,
+    w_DMR_ROF = 39,
+    w_DMR_PWR = 42,
+    w_SMG_ACC = 44,
+    w_SMG_DMG = 46,
+    w_SMG_ROF = 43,
+    w_SMG_PWR = 48,
+    w_PlasmaRifle_PWR = 54,
+    w_Carbine_ACC = 59,
+    w_Carbine_DMG = 58,
+    w_Carbine_MAG = 56,
+    w_Carbine_RNG = 57,
+    w_Carbine_ROF = 55,
+    w_Carbine_PWR = 60,
+    w_Mauler_PWR = 63,
+    w_Magnum_DMG = 65,
+    w_Magnum_PWR = 66,
+    w_PlasmaPistol_PWR = 67,
+    w_MachineGunTurret = 68,
+    w_PlasmaCannon = 69,
+    w_Unchanged = 254,
+    w_MapDefault = 255,
+    w_Random = 253
+};
+
+enum <byte> DamageModifierType
+{
+    dm_Unchanged = 0,
+    dm_0_perc,
+    dm_25_perc,
+    dm_50_perc,
+    dm_75_perc,
+    dm_90_perc,
+    dm_100_perc,
+    dm_110_perc,
+    dm_125_perc,
+    dm_150_perc,
+    dm_200_perc,
+    dm_300_perc,
+    dm_InstantKill
+};
+
+enum <byte> PlayerSpeedType
+{
+    ps_Unchanged = 0,
+    ps_25_perc,
+    ps_50_perc,
+    ps_75_perc,
+    ps_90_perc,
+    ps_100_perc,
+    ps_110_perc,
+    ps_125_perc,
+    ps_150_perc,
+    ps_200_perc,
+    ps_300_perc
+};
+
+enum <byte> PlayerGravityType
+{
+    pg_Unchanged = 0,
+    pg_0_perc = 6,
+    pg_15_perc = 7,
+    pg_25_perc = 8,
+    pg_35_perc = 9,
+    pg_50_perc = 1,
+    pg_75_perc = 2,
+    pg_100_perc = 3,
+    pg_125_perc = 10,
+    pg_150_perc = 4,
+    pg_200_perc = 5
+};
+
+enum <byte> VehicleUseType
+{
+    vu_Unchanged = 0,
+    vu_None,
+    vu_Passenger,
+    vu_Full
+};
+
+enum <byte> ActiveCamoType
+{
+    ac_Unchanged = 0,
+    ac_Off = 1,
+    ac_Bad = 2,
+    ac_Poor = 3,
+    ac_Good = 4
+};
+
+enum <byte> WaypointType
+{
+    way_Unchanged = 0,
+    way_No,
+    way_Allies,
+    way_Everyone,
+    way_NoNameTag,
+    way_NoNameTag_TeamOnly
+};
+
+// Replaces VisualEffectType
+enum <byte> PlayerSizeType
+{
+    psize__Unsupported = 1,
+    psize_Unchanged = 0,
+    psize_10_perc = 2,
+    psize_15_perc = 3,
+    psize_25_perc = 4,
+    psize_35_perc = 5,
+    psize_50_perc = 6,
+    psize_75_perc = 7,
+    psize_100_perc = 8,
+    psize_125_perc = 9,
+    psize_150_perc = 10,
+    psize_200_perc = 11,
+    psize_350_perc = 12,
+    psize_500_perc = 13,
+    psize_750_perc = 14,
+    psize_1000_perc = 15,
+    psize_1500_perc = 16,
+    psize_2000_perc = 17,
+    psize_3000_perc = 18
+};
+
+// This is from the Halo 3 Beta
+enum <byte> VisualEffectType
+{
+    aura_Unchanged = 0,
+    aura_None,
+    aura_TeamGlow,
+    aura_BlackGlow,
+    aura_WhiteGlow
+};
+
+enum <byte> ForcedColorType
+{
+    fc_Unchanged = 0,
+    fc_Off,
+    fc_Red,
+    fc_Blue,
+    fc_Green,
+    fc_Orange,
+    fc_Purple,
+    fc_Gold,
+    fc_Brown,
+    fc_Pink,
+    fc_White,
+    fc_Black,
+    fc_Zombie
+};
+
+enum <short> MotionTrackerModeType
+{
+    mtm_Unchanged = 0,
+    mtm_Off,
+    mtm_Allies,
+    mtm_Normal,
+    mtm_Enhanced
+};
+
+enum <short> MotionTrackerRangeType
+{
+    mtr_Unchanged = 0,
+    mtr_10_meters = 1,
+    mtr_15_meters_Unsupported = 2,
+    mtr_25_meters = 3,
+    mtr_50_meters_Unsupported = 4,
+    mtr_75_meters = 5,
+    mtr_100_meters_Unsupported = 6,
+    mtr_150_meters = 7
+};
+
+enum <short> TeamScoringType
+{
+    ts_Sum = 0,
+    ts_Min,
+    ts_Max,
+    ts_TeamControl
+};
+
+struct ShieldsAndHealth
+{
+    DamageResistanceType DamageResistance;
+    ShieldRechargeRateType ShieldRechargeRate;
+    ShieldVampirismType ShieldVampirism;
+    ToggleBooleanType ImmuneToHeadshots;
+    ShieldMultiplierType ShieldMultiplier;
+};
+
+struct WeaponsAndDamage
+{
+    byte padding0[3];
+    GrenadeCountType GrenadeCount;
+    byte padding1;
+    WeaponType PrimaryWeapon;
+    WeaponType SecondaryWeapon;
+    DamageModifierType DamageModifier;
+    ToggleBooleanType GrenadeRegen;
+    InfiniteAmmoType InfiniteAmmo;
+    ToggleBooleanType WeaponPickup;
+};
+
+struct Movement
+{
+    PlayerSpeedType PlayerSpeed;
+    PlayerGravityType PlayerGravity;
+    VehicleUseType VehicleUse;
+};
+
+struct Appearance
+{
+    ActiveCamoType ActiveCamo;
+    WaypointType Waypoint;
+    PlayerSizeType PlayerSize;
+    ForcedColorType ForcedColor;
+};
+
+struct Sensors
+{
+    MotionTrackerModeType MotionTrackerMode;
+    MotionTrackerRangeType MotionTrackerRange;
+};
+
+struct Traits
+{
+    ShieldsAndHealth _ShieldsAndHealth;
+    WeaponsAndDamage _WeaponsAndDamage;
+    Movement _Movement;
+    byte unk_t;
+    Appearance _Appearance;
+    Sensors _Sensors;
+};
+
+struct CTFSettings
+{
+    byte FlagAtHomeToScore; // Disabled = 0, Enabled = 1
+    byte FlagWaypoint; // UNK = 0, Always = 1, UNK = 2, Not In Single Flag = 3
+    byte NumberOfFlags; // MultipleFlags = 0, OneFlag = 1
+    byte RespawnOnCapture; // Disabled = 0, On Ally Capture = 1, On Enemy Capture = 2, On Any Capture = 3
+    short FlagReturnTime;
+    short SuddenDeath;
+    short CapturesToWin;
+    short unk0;
+    short FlagResetTime;
+
+    Traits FlagCarrierTraits;
+};
+
+struct SlayerSettings
+{
+    short slayerScoreToWin;
+    short unk0;
+    short slayerSlayerSettingsScoreOptionsKillPoints;
+    byte slayerSlayerSettingsScoreOptionsAssistPoints;
+    byte slayerSlayerSettingsScoreOptionsDeathPoints;
+    byte slayerSlayerSettingsScoreOptionsSuicidePoints;
+    byte slayerSlayerSettingsScoreOptionsBetrayalPoints;
+    byte slayerSlayerSettingsScoreOptionsLeaderKillBonus;
+    byte slayerSlayerSettingsScoreOptionsLeaderEliminationBonus;
+    byte slayerSlayerSettingsScoreOptionsAssassinationBonus;
+    byte slayerSlayerSettingsScoreOptionsHeadshotBonus;
+    byte slayerSlayerSettingsScoreOptionsBeatdownBonus;
+    byte slayerSlayerSettingsScoreOptionsStickyBonus;
+    byte slayerSlayerSettingsScoreOptionsSplatterBonus;
+    byte slayerSlayerSettingsScoreOptionsSpreeBonus;
+
+    Traits LeaderTraits;
+};
+
+struct OddballSettings
+{
+    int AdvancedOptionsAutoPickup;
+    short ScoreToWin;
+    short unk0;
+    short CarryingPoints;
+    byte KillPoints;
+    byte BallKillPoints;
+    byte BallCarrierKillPoints;
+    byte AdvancedOptionsBallCount;
+    short InitialBallDelay;
+    short BallRespawnDelay;
+    
+    Traits BallCarrierTraits;
+};
+
+
+struct KOTHSettings
+{
+    int unk0;
+    short ScoreToWin;
+    short unk1; // Seems to always be 90 (0x5A 0x00)
+    short HillMovement; // 0 = No Movement, 1 = 10 Seconds, 2 = 15 Seconds, 3 = 30 Seconds, 4 = 1 Minute, 5 = 2 Minutes, 6 = 3 Minutes, 7 = 4 Minutes, 8 = 5 Minutes; += 0 Hill Movement Order:Random, Seq + NoMovement = 256, Seq + 10Sec = 257, Seq + 15Sec = 258, Seq + 30Sec = 259, Seq + 1M = 260
+    byte OnHillPoints;
+    byte OffHillPoints;
+    byte UncontestedControlPoints;
+    byte KillPoints;
+
+    Traits OnHillTraits;
+};
+
+struct VIPSettings
+{
+    short ScoreToWin;
+    short unk1;
+    short SingleVIP; // Disabled = 0, Enabled = 1: VIPDeathEndsRound Disabled = +0, Enabled = +4: GoalAreas Disabled = +0, Enabled = +2
+    byte KillPoints;
+    byte VIPTakedownPoints;
+    byte KillAsVIPPoints;
+    byte VIPDeathPoints;
+    byte GoalArrivalPoints;
+    byte SuicidePoints;
+    byte BetrayalPoints;
+    byte VIPBetrayalPoints;
+    byte NextVIP; // Random = 0, NextDeath = 2, Unchanging = 3
+    byte GoalMovement; // NoMovement = 0, 10S = 1, 15S = 2, 30S = 3, 1M = 4, 2M = 5, 3M = 6, 4M = 7, 5M = 8, MoveOnArrival = 9, MoveOnVIPChange = 10
+    byte GoalMovementOrder; // Random = 0, Sequence = 1
+    byte unk2;
+    short InfluenceRadius; // Disabled = 0, 10Meters = 3, 15M = 5, 25M = 8, 30M = 10, 40M = 13, 50M = 16
+    
+    Traits VIPTeamTraits;
+
+    Traits VIPProximityTraits;
+
+    Traits VIPTraits;
+};
+
+struct JuggernautSettings
+{
+    short ScoreToWin;
+    short unk1;
+    short unk2;
+    byte FirstJuggernaut; // 0 = Random, 1 = First Kill, 2 = First Death
+    byte NextJuggernaut; // 0 = Killer of Juggernaut, 1 = Killed By Juggernaut, 2 = Unchanged, 3 = Random
+    byte AlliedAgainstJuggernaut; // 1 = Allied, 0 = NotAllied, GoalZones-Disabled= +0, GoalZones-Enabled= +4, RespawnOnLoneJuggernaut-Disabled = +0, RespawnOnLoneJuggernaut-Enabled = +2
+    byte GoalZoneMovement; // 0 = NoMovement, 1 = 10 Sec, 2 = 15 Sec, 3 = 30 Sec, 4 = 1 Min, 5 = 2 Min, 6 = 3 Min, 7 = 4 Min, 8 = 5 Min, 9 = MoveOnArrival, 10 = MoveOnNewJuggernaut
+    byte GoalZoneOrder; // 0 = Random, 1 = Sequence
+    byte KillPoints;
+    byte TakedownPoints;
+    byte KillAsJuggernautPoints;
+    byte GoalArrivalPoints;
+    byte SuicidePoints;
+    byte BetrayalPoints;
+    byte NextJuggernautDelay;
+
+    Traits JuggernautTraits;
+};
+
+struct TerritoriesSettings
+{
+    short OneSidedTerritories; // One-Sided: Enabled = +1, Disabled = +0, LockAfterCapture: Enabled = +2, Disabled = +0
+    short RespawnOnCapture; // Disabled = 0, Allied Captures = 1, Enemy Captures = 2, All Captures = 3
+    short TerritoryCaptureTime; // Instant = 0, 3Sec = 3, 5Sec = 5, 10Sec, 15Sec, 20Sec, 30Sec, 45Sec, 1Min, 2Min
+    short SuddenDeath; // NoLimit = -1
+
+    Traits DefenderTraits;
+
+    Traits AttackerTraits;
+};
+
+struct AssaultSettings
+{
+    int assaultSettingsResetOnDisarm; // 01 = Enabled, 00 = Disabled
+    short assaultBombMode; // Assault Bomb Mode; 00 = Multi Bomb, 01 = One Sided, 02 = Neutral Bomb
+    short unk1; // Enemy Bomb Waypoint?
+    short assaultDetonationsToWin; // Value in short/int
+    short unk2;
+    int unk3;
+    short unk4;
+    short assaultSettingsSuddenDeath; // Assault Settings > Sudden Death
+    short assaultSettingsBombResetTime; // Assault Settings > Bomb Reset Time
+    short assaultSettingsBombArmingTime; // Assault Settings > Bomb Arming Time - (0) Instant, (3) 3 Seconds, ... (30) 30 Seconds
+    short assaultSettingsBombDisarmingTime; // Assault Settings > Bomb Disarming Time
+    short assaultSettingsBombFuseTime; // Assault Settings > Bomb Fuse Time
+    
+    Traits BombCarrierTraits;
+
+    Traits SecondaryTraits;
+};
+
+struct InfectionSettings
+{
+    byte RespawnOnHavenMove; // Disabled = 0, Enabled = 1
+    byte SafeHavenMovement; // Havens Disabled = 0, Random Order = 1, Sequential Order = 2
+    byte NextZombie; // Winner = 0, Chump = 1, Unchanged = 2, Random = 3
+    byte InitalZombieCount; // 25% = 0, 50% = 1, 1 = 2, 2 = 3, ... 15 = 16
+    byte SafeHavenMovementTime; // Disabled = 0, 5 Sec = 5, 10 Sec = 10, 15 Sec = 15, 20 Sec = 20, 30 Sec = 30, 45 Sec = 45, 1 Min = 60, 2 Mins = 120
+    byte unk1;
+    byte ZombieKillPoints;
+    byte InfectionPoints;
+    byte SafeHavenArrivalPoints;
+    byte SuicidePoints;
+    byte BetrayalPoints;
+    byte LastManStandingBonus;
+
+    Traits ZombieTraits;
+
+    Traits AlphaZombieTraits;
+
+    Traits SafeHavenTraits;
+
+    Traits LastManTraits;
+};
+struct FILE
+{
+    // BLAM File Block
+    struct _BLFBlock
+    {
+        char _blf[4]; // _blf
+        int size;
+        short unk0; // 0x00 0x01
+        short unk1; // 0x00 0x02
+        short unk2; // 0xFF 0xFE
+        char unused0[34]; // 0x00 ..
+    } blfblock;
+
+    // Content Item Header Block
+    struct _CHDRBlock
+    {
+        char chdr[4]; // chdr
+        int size;
+        int contentVersion;
+        short buildVersionMajor; // Build Version. Ex. 1380 = AppVeyor Build 1380
+        short buildVersionMinor;
+
+        byte checksum[8];
+        wchar_t variantNameMenu[16]; // null termed
+        char variantDescriptionMenu[128]; // null termed
+        char currentAuthorName[16]; // ASCII, (A6 (|) for Bungie)        
+        GameTypeOrderType gameTypeMenuOrder; // Another game type but uses a different order
+        int isUserValid;
+        byte currentAuthorXUID[8]; // Current variant author XUID (NULL if Bungie)
+        int64 fileSize;
+        time_t fileCreatedTimestamp; // Seconds since the UNIX epoch
+        byte fileCreatedTimestamp_cont[4]; // 010 Editor does not support 64bit times of this format
+        int unk0;
+        int campaignID;
+        int MapID;
+        GameType gameTypeMenu; // What to sort as in menu, does not change how it is loaded or what can be edited
+        int campaignDifficulty;
+        int campaignInsertionIndex;
+        int isSurvival;
+        int gameID;
+    } chdrblock;
+
+    // Variant Block
+    struct _VRBlock
+    {
+        char vr[4]; // mpvr = multiplayer (game mode) variant; mapv = map variant
+        int size;
+        int contentVersion;
+        GameType gameTypeInit; // Game Type that appears to ultimately control how the game type is read
+        GameCodeType GameCode; // Not entirely sure but it seems only the first two bytes change - based off original variant type (ex. slayer, ctf, vip) changing it does not appear to do anything
+        byte padding0[4]; // padding
+        if (chdrblock.fileSize != 57840)
+            byte originalBasedVariantName[40]; // will contain name of variant this one is based off of - does not always have value set
+        wchar_t variantNameGame[16]; // null termed
+        char variantDescriptionGame[128]; // null termed
+        char originalAuthorName[16]; // ASCII, (A6 (|) for Bungie) 
+        GameTypeOrderType gameTypeGameOrder; // Another game type but uses a different order
+        int isUserValid;
+        byte originalAuthorXUID[8]; // Original variant author XUID (NULL if Bungie)
+        int64 originalFileSize;
+        time_t originalFileCreatedTimestamp; // Seconds since the UNIX epoch
+        byte fileCreatedTimestamp_cont[4]; // 010 Editor does not support 64bit times of this format
+        int unk0;
+        int campaignID;
+        int MapID;
+        GameType gameTypeGame;
+        int campaignDifficulty;
+        int campaignInsertionIndex;
+        int isSurvival;
+        int gameID;
+
+        // Stop reading if a mapv
+        if (chdrblock.fileSize == 57840)
+            break;
+        // Above (VR) should mirror CHDR but for Original File while CHDR is for Current File
+
+        // Start dealing with variant settings
+        byte generalSettingsRoundsReset; // 07 = Everything, 01 = Nothing, 03 = Players Only // One less if not Team Game // += 8 if Spectating allowed
+        byte generalSettingsTimeLimit; // Time limit in minutes
+        byte generalSettingsNumberOfRounds; // Total number of rounds to play
+        byte unk2; // Early Victory Win Count?
+        byte synchronizeWithTeam; //Synchronize respawns with team, [0x10]16 = Disabled, [0x11]17 = Enabled, [0x18]24 = Respawn on Kills, [0x19]25 = Sync with Team + Respawn on Kill
+        byte generalSettingsRespawnSettingsLivesPerRound; // 0 is unlimited
+        byte unk3; // Shared Team Lives?
+        byte respawnTimeServer; // Time in seconds the server uses for player respawn
+        byte respawnTimeMenu; // Time in seconds menu uses for player respawn
+        byte suicidePenaltyMenu; // Time in seconds menu uses for player suicide penalty
+        byte betrayalPenaltyMenu; // Time in seconds menu uses for player betrayal penalty
+        byte respawnTimeGrowth; // Dying increases respawn time, killing decreases it (in seconds) Disabled(0x00), 2Seconds(0x02), 3Seconds(0x03), 5Seconds(0x05), 10Seconds(0x0A), 15Seconds(0x0F)
+        int respawnTraitsDuration; // How long in seconds player is given Respawn Traits
+        // Respawn Traits > Shield and Health
+
+        Traits RespawnTraits;
+
+        short generalSettingsFriendlyFire; // Friendly Fire/Betrayal Booting - FF & BB Disabled(0x00) FF Enabled & BB Disabled(0x01) FF Disabled & BB Enabled(0x02) FF & BB Enabled(0x03)
+        short generalSettingsTeamChanging; // Not Allowed(0x00) Allowed(0x01)
+
+        int weaponsAndVehiclesGrenadesOnMapIndestructibleVehicles; //GoM = Map Default or None, IV = Disabled or Enabled - Map Default + Disabled = 01, None + Disabled = 00, Map Default + Enabled = 03, None + Enabled = 02
+        
+        Traits generalSettingsBasePlayerTraits;
+
+        short weaponsAndVehiclesWeaponsOnMap;
+        short weaponsAndVehiclesVehicleSet;
+
+        Traits redPowerupOptions;
+
+        Traits bluePowerupOptions;
+
+        Traits customPowerupOptions;
+
+        byte redPowerupOptionsDuration; // Duration seconds in hex
+        byte bluePowerupOptionsDuration; // Duration seconds in hex
+        byte customPowerupOptionsDuration; // Duration seconds in hex
+        
+        byte unk4;
+        byte is_dirty;
+        byte unk5;
+        TeamScoringType TeamScoring;
+
+        switch (chdrblock.gameTypeMenu)
+        {
+            case 1:
+                CTFSettings VariantSettings;
+                break;
+            case 2:
+                SlayerSettings VariantSettings;
+                break;
+            case 3:
+                OddballSettings VariantSettings;
+                break;
+            case 4:
+                KOTHSettings VariantSettings;
+                break;
+            case 6:
+                VIPSettings VariantSettings;
+                break;
+            case 7:
+                JuggernautSettings VariantSettings;
+                break;
+            case 8:
+                TerritoriesSettings VariantSettings;
+                break;
+            case 9:
+                AssaultSettings VariantSettings;
+                break;
+            case 10:
+                InfectionSettings VariantSettings;
+                break;
+        }
+        byte EOF_Padding[chdrblock.fileSize - FTell() - 20];
+    } vrblock;
+
+    // End of File Block
+    struct _EOFBLOCK
+    {
+        char EOF[4];
+        int size;
+        byte EOF_FLAGS[16];
+    } eofblock;
+} file;
+
