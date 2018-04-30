@@ -561,6 +561,8 @@ namespace Halo_Online_Variant_Editor
     {
         [Description("Disabled")]
         Disabled = 0,
+        [Description("1 Second [UNSUPPORTED]")]
+        Seconds1 = 1,
         [Description("2 Seconds")]
         Seconds2 = 2,
         [Description("3 Seconds")]
@@ -570,7 +572,11 @@ namespace Halo_Online_Variant_Editor
         [Description("10 Seconds")]
         Seconds10 = 10,
         [Description("15 Seconds")]
-        Seconds15 = 15
+        Seconds15 = 15,
+        [Description("20 Seconds [UNSUPPORTED]")]
+        Seconds20 = 20,
+        [Description("30 Seconds [UNSUPPORTED]")]
+        Seconds30 = 30
     }
     public enum GrenadesOnMap
     {
@@ -885,11 +891,21 @@ namespace Halo_Online_Variant_Editor
         S10 = 10,
         [Description("15 Seconds")]
         S15 = 15,
+        [Description("20 Seconds [UNSUPPORTED]")]
+        S20 = 20,
         [Description("30 Seconds")]
-        S30 = 30
+        S30 = 30,
+        [Description("45 Seconds [UNSUPPORTED]")]
+        S45 = 45,
+        [Description("60 Seconds [UNSUPPORTED]")]
+        S60 = 60,
+        [Description("2 Minutes [UNSUPPORTED]")]
+        M2 = 120
     }
     public enum BombDisarmingTime : short
     {
+        [Description("Instant [UNSUPPORTED]")]
+        Instant = 0,
         [Description("3 Seconds")]
         S3 = 3,
         [Description("5 Seconds")]
@@ -898,11 +914,21 @@ namespace Halo_Online_Variant_Editor
         S10 = 10,
         [Description("15 Seconds")]
         S15 = 15,
+        [Description("20 Seconds [UNSUPPORTED]")]
+        S20 = 20,
         [Description("30 Seconds")]
-        S30 = 30
+        S30 = 30,
+        [Description("45 Seconds [UNSUPPORTED]")]
+        S45 = 45,
+        [Description("60 Seconds [UNSUPPORTED]")]
+        S60 = 60,
+        [Description("2 Minutes [UNSUPPORTED]")]
+        M2 = 120
     }
     public enum BombResetTime : short
     {
+        [Description("Instant [UNSUPPORTED]")]
+        Instant = 0,
         [Description("3 Seconds")]
         S3 = 3,
         [Description("5 Seconds")]
@@ -911,10 +937,16 @@ namespace Halo_Online_Variant_Editor
         S10 = 10,
         [Description("15 Seconds")]
         S15 = 15,
+        [Description("20 Seconds [UNSUPPORTED]")]
+        S20 = 20,
         [Description("30 Seconds")]
         S30 = 30,
+        [Description("45 Seconds [UNSUPPORTED]")]
+        S45 = 45,
         [Description("60 Seconds")]
-        S60 = 60
+        S60 = 60,
+        [Description("2 Minutes [UNSUPPORTED]")]
+        M2 = 120
     }
     public enum SuddenDeath : short
     {
@@ -1147,8 +1179,12 @@ namespace Halo_Online_Variant_Editor
         S10 = 10,
         [Description("15 Seconds")]
         S15 = 15,
+        [Description("20 Seconds [UNSUPPORTED]")]
+        S20 = 20,
         [Description("30 Seconds")]
         S30 = 30,
+        [Description("45 Seconds [UNSUPPORTED]")]
+        S45 = 45,
         [Description("60 Seconds")]
         S60 = 60,
         [Description("2 Minutes")]
@@ -1236,8 +1272,14 @@ namespace Halo_Online_Variant_Editor
         S10 = 10,
         [Description("15 Seconds")]
         S15 = 15,
+        [Description("20 Seconds [UNSUPPORTED]")]
+        S20 = 20,
         [Description("30 Seconds")]
-        S30 = 30
+        S30 = 30,
+        [Description("45 Seconds [UNSUPPORTED]")]
+        S45 = 45,
+        [Description("60 Seconds [UNSUPPORTED]")]
+        S60 = 60
     }
     public enum BallRespawnDelay : short
     {
